@@ -1,0 +1,299 @@
+body{
+  margin:0;
+  font-family: Arial sans-serif;
+}
+
+header {
+  text-align:center;
+  background-color: #bdc3c7;
+  padding:15px;
+  box-sizing: border-box;
+}
+section {
+  width:100%;
+  text-align: center;
+  margin-top: 0;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+h1 {
+  margin:0;
+}
+
+h2{
+  margin-top:0;
+}
+
+input {
+  margin-top:15px;
+  width:40%;
+  margin-bottom:15px;
+}
+
+textarea{
+  width:85%;
+  display:block;
+  margin:auto;
+  margin-bottom:15px;
+}
+
+button {
+  width: 200px;
+  margin-top:10px;
+  border:1px solid black;
+  height:50px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background-color: #27ae60;
+  color:#000000;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+article {
+  padding-top:20px;
+}
+
+#photo_container{
+  display:inline-block;
+  vertical-align: middle;
+}
+
+#photo{
+  border-radius: 100%;
+  width:100%;
+}
+
+.intro {
+  display:inline-block;
+}
+
+.diplome_container{
+  width:75%;
+  margin: auto;
+}
+
+.diplome {
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  width: 320px;
+  background-color: #EADDA2;
+  margin-bottom: 10px;
+  border: 6px solid #FFDF00;
+}
+
+.img_container{
+  margin-bottom: -4px;
+  margin-left: -2px;
+  margin-right: -3px;
+  width: 50%;
+  display:inline-block;
+}
+
+.real_img{
+  background-image: url("../gallery/realisation1.jpg");
+  height:300px;
+  background-size: cover;
+}
+
+.text_container{
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+  height:300px;
+  margin-bottom: -4px;
+  display: none;
+  overflow: hidden;
+}
+
+.text_title{
+  font-size: 40px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+#formation {
+  background-color:#2c3e50;
+  clear:both;
+}
+
+#skill {
+  background-color:#2c3e50;
+}
+
+#real {
+  background-color:#2c3e50;
+  padding-bottom: 0;
+}
+
+#social {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#contact {
+  background-color: #16a085;
+}
+
+#contact_form{
+  background-color: #16a085;
+}
+
+#form{
+  width:40%;
+  border:1px solid black;
+  border-radius:15px;
+  margin:auto;
+  background-color: #27ae60;
+}
+#mail {
+  text-decoration:none;
+  color:#34495e;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width:0;
+
+  }
+
+  to {
+    width:100%;
+    margin-left: 0%;
+  }
+}
+
+.real_img:hover .text_container {
+  display:inline-block;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+footer {
+  padding:15px;
+  box-sizing: border-box;
+  background-color: #bdc3c7;
+}
+
+.progress_bar {
+  width: 60%;
+  height:15px;
+  background-color: white;
+  border-radius:15px;
+  margin: auto;
+}
+.level {
+  background-color: black;
+  height:15px;
+  border-radius:15px;
+}
+
+.social_button{
+  height:100px;
+  background-color:#7f8c8d;
+  color:#95a5a6;
+  display:inline-block;
+  margin-left: -5px;
+}
+
+.social_button:hover {
+  color:white;
+}
+
+.social_button:hover .linkedin {
+  background-color:#2980b9;
+}
+
+.social_button:hover .github {
+  background-color:#000000;
+}
+
+.social_button:hover .twitter {
+  background-color:#3498db;
+}
+
+.social_button_text{
+  text-transform: uppercase;
+  margin:0;
+  padding-top: 40px;
+  padding-bottom: 41px;
+}
+.social_link {
+  text-decoration: none;
+}
+
+.social_link:nth-child(1) .social_button{
+  width:33.33%;
+}
+.social_link:nth-child(2) .social_button{
+  width:33.34%;
+}
+.social_link:nth-child(3) .social_button{
+  width:33.33%;
+  margin-right: -5px;
+}
+@media screen and (max-width: 720px) {
+  .diplome{
+    width:auto;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .diplome_container{
+    width:auto;
+    margin:0;
+  }
+  .social_link:nth-child(1) .social_button{
+    width:100%;
+  }
+  .social_link:nth-child(2) .social_button{
+    width:100%;
+  }
+  .social_link:nth-child(3) .social_button{
+    width:100%;
+    margin-right: 0px;
+  }
+  .social_button {
+    margin-left: 0;
+  }
+  .img_container {
+    width:100%;
+    height:150px;
+  }
+  .text_container{
+    height:150px;
+  }
+  .real_img {
+    height:150px;
+  }
+  .text_title{
+    font-size: 25px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .text{
+    font-size: 15px;
+  }
+  input{
+    width:85%;
+  }
+  #form {
+    width:75%;
+  }
+  p{
+    padding:10px;
+    box-sizing: border-box;
+  }
+}
